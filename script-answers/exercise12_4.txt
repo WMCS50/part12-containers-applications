@@ -1,0 +1,28 @@
+Script started on 2024-07-29 16:35:50-06:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+[?2004h]0;wmunix@DESKTOP-8RGH9KH: /mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[01;32mwmunix@DESKTOP-8RGH9KH[00m:[01;34m/mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[00m$ [K]0;wmunix@DESKTOP-8RGH9KH: /mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[01;32mwmunix@DESKTOP-8RGH9KH[00m:[01;34m/mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[00m$ [K]0;wmunix@DESKTOP-8RGH9KH: /mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[01;32mwmunix@DESKTOP-8RGH9KH[00m:[01;34m/mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[00m$ docker container -[Kls  -a
+[?2004lCONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                          PORTS     NAMES
+9d852921c4b2   ubuntu        "bash"     7 minutes ago    Exited (0) About a minute ago             laughing_gates
+fc2896d6437c   hello-world   "/hello"   10 minutes ago   Exited (0) 9 minutes ago                  busy_shamir
+c34973c1d0ea   ubuntu        "bash"     13 minutes ago   Exited (127) 12 minutes ago               modest_varahamihira
+ca75de221be3   ubuntu        "bash"     20 minutes ago   Exited (0) 17 minutes ago                 distracted_diffie
+239aa99a9c19   hello-world   "/hello"   21 minutes ago   Exited (0) 21 minutes ago                 gracious_haslett
+[?2004h]0;wmunix@DESKTOP-8RGH9KH: /mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[01;32mwmunix@DESKTOP-8RGH9KH[00m:[01;34m/mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[00m$ docker start -i lauc hing [K_gates
+[?2004lError response from daemon: No such container: lauching_gates
+[?2004h]0;wmunix@DESKTOP-8RGH9KH: /mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[01;32mwmunix@DESKTOP-8RGH9KH[00m:[01;34m/mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[00m$ docker start-[K-[K -i laug hing_gates
+[?2004l[?2004h]0;root@9d852921c4b2: /root@9d852921c4b2:/# [K]0;root@9d852921c4b2: /root@9d852921c4b2:/# [7mcurl -sL https://deb.nodesource.com/setup_20.x | bash[27m
+[7mapt install -y nodejs[27m[Acurl -sL https://deb.nodesource.com/setup_20.x | bash
+apt install -y nodejs
+[?2004lbash: curl: command not found
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... 7%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 51%Building dependency tree... Done
+Reading state information... 0% Reading state information... 6%Reading state information... Done
+nodejs is already the newest version (18.19.1+dfsg-6ubuntu5).
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+[?2004h]0;root@9d852921c4b2: /root@9d852921c4b2:/# [K[7mnode /usr/src/app/index.js[27mnode /usr/src/app/index.js
+[?2004lHello World
+[?2004h]0;root@9d852921c4b2: /root@9d852921c4b2:/# [Kexit
+[?2004lexit
+[?2004h]0;wmunix@DESKTOP-8RGH9KH: /mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[01;32mwmunix@DESKTOP-8RGH9KH[00m:[01;34m/mnt/c/Users/walid/OneDrive/Documents/GitHub/part12-containers-applications/script-answers[00m$ [?2004l
+exit
+
+Script done on 2024-07-29 16:36:51-06:00 [COMMAND_EXIT_CODE="0"]
