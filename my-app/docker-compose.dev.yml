@@ -1,0 +1,43 @@
+services:
+  app:
+    image: bloglist-front-dev
+    build:
+      context: ./redux-bloglist-fe/ 
+      dockerfile: dev.Dockerfile 
+    volumes:
+      - ./redux-bloglist-fe:/usr/src/app
+      - /usr/src/app/node_modules
+    container_name: bloglist-front-dev
+
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    volumes: 
+      - mongo_data:/data/db
+
+  server:
+    image: bloglist-back-dev
+    build:
+      context: ./redux-bloglist-be/ 
+      dockerfile: dev.Dockerfile 
+    volumes:
+      - ./redux-bloglist-be/:/usr/src/app 
+    env_file:
+      - ./redux-bloglist-be/.env
+    depends_on:
+      - mongo
+  
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+    depends_on:
+      - app
+      - server
+
+volumes:
+  mongo_data:

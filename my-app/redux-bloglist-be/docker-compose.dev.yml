@@ -1,0 +1,26 @@
+services:
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    volumes: 
+      - mongo_data:/data/db
+
+  server:
+    image: bloglist-backend
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+    container_name: bloglist-backend-dev
+
+volumes:
+  mongo_data:

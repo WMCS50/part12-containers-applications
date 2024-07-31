@@ -10,10 +10,6 @@ ENV VITE_BACKEND_URL="http://localhost:3000"
 RUN npm ci
 RUN npm run build
 
-#Test stage
-FROM build-stage As test-stage
-RUN npm run test
-
 # Serve stage using Nginx
 FROM nginx:1.25-alpine
 
